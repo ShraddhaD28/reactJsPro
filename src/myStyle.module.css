@@ -1,0 +1,30 @@
+.myStyle {
+    color:"Green";
+    padding:10px;
+    font-family:Arial;
+}
+
+form{
+    width: 700px;
+    background: rgb(194 109 130 / 20%);
+    padding: 25px;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.Mainsec{
+    text-align: center;
+}
+
+.card{
+    width:350px;
+    float: left;
+    height:350px !important;
+    margin: 8px;
+}
+.section{
+    padding: 40px;
+    margin: 0 auto;
+    display: block;
+}

@@ -68,3 +68,50 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+// Components
+1. Functional Component - components that only contain render method & stateless component
+2. Class Component - it requires u to extend from React.Component & stateful compoenent , it can hold and manage state.
+
+// state
+1. state are the heart of react compoent
+2. to define state add class constructor which assigns a initial state by using this.state , and property can be rendered inside render() method
+3. to set the state it is require to call super() method in constructor, this.state is uninitialized before super method called
+
+// props
+1. props stands for Properties , They are immutable .
+2. It gives way to pass data from one component to other component , it is similar to function arguments, they pass in same way as arguments pass in function.
+3. when we need to pass immutable data in component , we have to add props to reactDom.render() method in main.js file and use it inside the component in wherever component needed.
+4. we need to call super() method inside constructor to access props 
+
+// constructor
+1. it is use to initialized state 
+2. using this inside contructor
+3. To initialize third party libraries in it
+4. Binding some context(this) when u need a class method to be passed in props to children
+
+// React component API
+1. setState() method - it is used to update state of the component . it only adds changes to original state
+2. forceUpdate() method - this method allows us to update component manually
+3. findDOMNode() method - for DOM Manipulation , this method allows us to find or access the underlying DOM node.
+
+// lifecycle of component
+1. Initial Phase - it contains default props and initial state by method getDefaultProps() getInitialState()
+2. Mounting Phase - instance of component created and inserted into DOM 
+   1.compponentWillMount() - this is call before componenent gets rendered into DOM
+   2.componentDidMount() - it is called after component gets rendered into DOM
+   3.render() - it is responsible to return a single root HTML node
+3. Updating Phase() - here we get new Props and State 
+   1.componentWillReceiveProps() - it is called when component receives new props
+   2.shouldComponentUpdate() 
+
+   // React Forms
+   1. Uncontrolled component - here we have to use ref to access the input value React.creatRef();
+   2. Controlled component - here we use setState() method to update data
+
+ // Transition
+ 1. Transition
+ 2. CSS Transition
+ 3. Transition Group
